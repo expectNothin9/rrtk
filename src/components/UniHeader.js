@@ -24,19 +24,6 @@ const Logo = () => (
   </StyledLogo>
 )
 
-const StyledSettingsButton = styled.button`
-  width: 48px;
-  height: 48px;
-  border: none;
-  padding: 0;
-  background: none;
-`
-const SettingsButton = () => (
-  <StyledSettingsButton>
-    <SettingsIcon fontSize="large" />
-  </StyledSettingsButton>
-)
-
 const StyledSettings = styled.div`
   position: absolute;
   top: 0;
@@ -44,17 +31,26 @@ const StyledSettings = styled.div`
   height: 48px;
   display: flex;
 
-  p {
+  .user-name {
     font-size: 18px;
     line-height: 48px;
     margin: 0;
     padding: 0 12px;
   }
+  .settings-button {
+    width: 48px;
+    height: 48px;
+    border: none;
+    padding: 0;
+    background: none;
+  }
 `
 const Settings = ({ user }) => (
   <StyledSettings>
-    <p>{`${user.firstName} ${user.lastName}`}</p>
-    <SettingsButton />
+    <p className="user-name">{`${user.firstName} ${user.lastName}`}</p>
+    <button className="settings-button">
+      <SettingsIcon fontSize="large" />
+    </button>
   </StyledSettings>
 )
 Settings.propTypes = {
@@ -68,9 +64,6 @@ const StyledUniHeader = styled.header`
   position: relative;
   border-bottom: 1px solid #ccc;
   height: 48px;
-  div {
-    height: 48px;
-  }
 `
 
 const UniHeader = () => {
