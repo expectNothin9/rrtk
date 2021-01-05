@@ -11,6 +11,14 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 | [styled-components](https://styled-components.com/)                                       | Use the best bits of ES6 and CSS to style your apps without stress                    |
 | [Material Icons](https://material-ui.com/components/icons/#material-icons)                | 1,100+ React Material icons ready to use from the official website                    |
 
+## TBD & TODOs
+
+- [ ] reset.css?
+- [ ] how to adopt design system?
+  - for example, spacing and colors
+- [ ] API integration
+  - [environment variables](https://create-react-app.dev/docs/adding-custom-environment-variables/)
+
 ## Available Scripts
 
 In the project directory, you can run:

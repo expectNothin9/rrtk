@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import PropTypes from 'prop-types'
 import { useSelector, useDispatch } from 'react-redux'
 import styled from 'styled-components'
 import CircularProgress from '@material-ui/core/CircularProgress'
@@ -120,6 +121,13 @@ const ProjectsList = ({ projects }) => (
     ))}
   </StyledProjectsList>
 )
+ProjectsList.propTypes = {
+  projects: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired
+    })
+  )
+}
 
 const StyledLoading = styled.div`
   padding: 20px;

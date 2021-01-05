@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import SettingsIcon from '@material-ui/icons/Settings'
 import { Link } from 'react-router-dom'
@@ -23,21 +24,7 @@ const Logo = () => (
   </StyledLogo>
 )
 
-const StyledUserName = styled.p`
-  position: absolute;
-  top: 0;
-  right: 48px;
-  font-size: 18px;
-  line-height: 48px;
-  margin: 0;
-  padding: 0 12px;
-`
-const UserName = ({ userName }) => <StyledUserName>{userName}</StyledUserName>
-
 const StyledSettingsButton = styled.button`
-  position: absolute;
-  top: 0;
-  right: 0;
   width: 48px;
   height: 48px;
   border: none;
@@ -49,6 +36,33 @@ const SettingsButton = () => (
     <SettingsIcon fontSize="large" />
   </StyledSettingsButton>
 )
+
+const StyledSettings = styled.div`
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 48px;
+  display: flex;
+
+  p {
+    font-size: 18px;
+    line-height: 48px;
+    margin: 0;
+    padding: 0 12px;
+  }
+`
+const Settings = ({ user }) => (
+  <StyledSettings>
+    <p>{`${user.firstName} ${user.lastName}`}</p>
+    <SettingsButton />
+  </StyledSettings>
+)
+Settings.propTypes = {
+  user: PropTypes.shape({
+    firstName: PropTypes.string.isRequired,
+    lastName: PropTypes.string.isRequired
+  })
+}
 
 const StyledUniHeader = styled.header`
   position: relative;
@@ -63,8 +77,7 @@ const UniHeader = () => {
   return (
     <StyledUniHeader>
       <Logo />
-      <UserName userName="rwen" />
-      <SettingsButton />
+      <Settings user={{ firstName: 'ray', lastName: 'wen' }} />
     </StyledUniHeader>
   )
 }
