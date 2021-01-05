@@ -1,4 +1,15 @@
+# RRTK - React Redux Toolkit
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+
+## Tech stack
+
+| Technique                                                                                 | Description                                                                           |
+| :---------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------ |
+| [Create React App](https://reactjs.org/docs/create-a-new-react-app.html#create-react-app) | The best way to start building a new single-page application in React                 |
+| [Redux Toolkit](https://redux-toolkit.js.org/)                                            | The official, opinionated, batteries-included toolset for efficient Redux development |
+| [styled-components](https://styled-components.com/)                                       | Use the best bits of ES6 and CSS to style your apps without stress                    |
+| [Material Icons](https://material-ui.com/components/icons/#material-icons)                | 1,100+ React Material icons ready to use from the official website                    |
 
 ## Available Scripts
 

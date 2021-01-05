@@ -29,13 +29,24 @@ export const fetchProjects = createAsyncThunk('project/fetchProjects', async () 
     projects: [
       {
         id: 1,
-        name: 'Project Name',
+        name: 'Final Chapter',
         createAt: 1609742852081,
         owner: {
           id: 1,
-          firstName: 'First Name',
-          lastName: 'Last Name',
-          email: 'owner@email.com'
+          firstName: 'ray',
+          lastName: 'wen',
+          email: 'rwen@email.com'
+        }
+      },
+      {
+        id: 2,
+        name: 'rwen-project-1',
+        createAt: 1605168110000,
+        owner: {
+          id: 1,
+          firstName: 'ray',
+          lastName: 'wen',
+          email: 'rwen@email.com'
         }
       }
     ]

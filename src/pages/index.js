@@ -1,11 +1,12 @@
 import UniHeader from '../components/UniHeader'
+import LandingEntrance from '../components/LandingEntrance'
 
 const Home = () => {
   return (
-    <section>
+    <>
       <UniHeader />
-      <h1>Home Page</h1>
-    </section>
+      <LandingEntrance />
+    </>
   )
 }
 
