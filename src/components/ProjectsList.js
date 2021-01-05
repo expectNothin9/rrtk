@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import React, { useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import styled from 'styled-components'
 import CircularProgress from '@material-ui/core/CircularProgress'
@@ -155,6 +155,5 @@ const ProjectsListBox = () => {
     </StyledProjectsListBox>
   )
 }
-
 
 export default ProjectsListBox
