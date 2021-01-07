@@ -148,18 +148,18 @@ const Answer = () => {
   }
 }
 
-const Box = styled.div`
+const Main = styled.main`
   --section-padding: var(--space-xxxl);
   @media only screen and (max-width: 428px) {
     --section-padding: var(--space-m);
   }
 `
 const NegativeEnergyMentor = () => (
-  <Box>
+  <Main>
     <Header />
     <Question />
     <Answer />
-  </Box>
+  </Main>
 )
 
 export default NegativeEnergyMentor

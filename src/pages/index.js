@@ -4,10 +4,10 @@ import LandingEntrance from '../components/LandingEntrance'
 
 const Home = () => {
   return (
-    <>
+    <main>
       <UniHeader />
       <LandingEntrance />
-    </>
+    </main>
   )
 }
 

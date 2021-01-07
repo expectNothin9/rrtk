@@ -7,13 +7,11 @@ import NegativeEnergyMentor from './pages/negative-energy-mentor'
 function App() {
   return (
     <Router>
-      <main className="App">
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/projects" component={Projects} />
-          <Route exact path="/negative-engergy-mentor" component={NegativeEnergyMentor} />
-        </Switch>
-      </main>
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/projects" component={Projects} />
+        <Route exact path="/negative-engergy-mentor" component={NegativeEnergyMentor} />
+      </Switch>
     </Router>
   )
 }

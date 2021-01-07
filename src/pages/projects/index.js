@@ -4,10 +4,10 @@ import ProjectsList from '../../components/ProjectsList'
 
 const Projects = () => {
   return (
-    <>
+    <main>
       <UniHeader />
       <ProjectsList />
-    </>
+    </main>
   )
 }
 

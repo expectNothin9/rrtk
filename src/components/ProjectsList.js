@@ -124,6 +124,7 @@ ProjectsList.propTypes = {
 
 const StyledLoading = styled.div`
   padding: 20px;
+  text-align: center;
 `
 
 const Loading = () => (
