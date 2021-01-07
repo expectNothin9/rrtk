@@ -54,8 +54,26 @@ const StyledQuestionForm = styled.form`
     height: 64px;
     padding: 0;
   }
+  @keyframes explore {
+    0% {
+      transform: rotate(0);
+    }
+    25% {
+      transform: rotate(-30deg);
+    }
+    75% {
+      transform: rotate(30deg);
+    }
+    100% {
+      transform: rotate(0);
+    }
+  }
   button.loading {
     color: #6aa3ea;
+    animation-name: explore;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
   }
   button.succeeded {
     color: #81c963;
