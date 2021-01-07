@@ -5,6 +5,8 @@ import SettingsIcon from '@material-ui/icons/Settings'
 import { Link } from 'react-router-dom'
 
 const StyledLogo = styled.p`
+  display: inline-block;
+  margin: 0 auto;
   height: 48px;
   font-size: 28px;
   line-height: 48px;
@@ -61,6 +63,7 @@ const StyledUniHeader = styled.header`
   position: relative;
   border-bottom: 1px solid #ccc;
   height: 48px;
+  display: flex;
 `
 
 const UniHeader = () => {

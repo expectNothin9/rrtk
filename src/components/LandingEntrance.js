@@ -29,6 +29,7 @@ const Brief = () => (
 
 const StyledLink = styled(Link)`
   display: inline-block;
+  margin: 0 auto;
   color: #000;
   font-weight: bold;
   text-decoration: none;
@@ -38,6 +39,8 @@ const StyledLink = styled(Link)`
 `
 
 const StyledLandingEntrance = styled.section`
+  display: flex;
+  flex-direction: column;
   padding: 36px 12px;
 `
 const LandingEntrance = () => (

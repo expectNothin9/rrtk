@@ -75,6 +75,7 @@ const StyledProjectsList = styled.ul`
       border-radius: 50%;
       background-color: #ccc;
       line-height: 36px;
+      text-align: center;
     }
     .project-deletion {
       flex-basis: 48px;
