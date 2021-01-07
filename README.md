@@ -18,6 +18,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
   - for example, spacing and colors
 - [ ] API integration
   - [environment variables](https://create-react-app.dev/docs/adding-custom-environment-variables/)
+- [ ] husky for prettier and commitlint?
 
 ## Available Scripts
 
