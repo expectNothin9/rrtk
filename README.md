@@ -11,14 +11,18 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 | [styled-components](https://styled-components.com/)                                       | Use the best bits of ES6 and CSS to style your apps without stress                    |
 | [Material Icons](https://material-ui.com/components/icons/#material-icons)                | 1,100+ React Material icons ready to use from the official website                    |
 
+|
+
 ## TBD & TODOs
 
-- [ ] reset.css?
-- [ ] how to adopt design system?
-  - for example, spacing and colors
+- [x] reset.css (adopted)
+- [x] design system (adopted), `/public/design-system.css`
+  - use [css variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)
 - [ ] API integration
   - [environment variables](https://create-react-app.dev/docs/adding-custom-environment-variables/)
 - [ ] husky for prettier and commitlint?
+- [ ] [code spliting](https://reactjs.org/docs/code-splitting.html#route-based-code-splitting) by routes?
+- [ ] folder and component file structure
 
 ## Available Scripts
 
