@@ -10,11 +10,9 @@ const StyledBrief = styled.article`
 
   h2 {
     font-size: 40px;
-    margin: 0;
   }
   p {
     font-size: 20px;
-    margin: 0;
     margin-top: 12px;
   }
 `

@@ -13,9 +13,6 @@ const StyledProjectsListHeader = styled.div`
   justify-content: space-between;
   padding-bottom: 12px;
 
-  p {
-    margin: 0;
-  }
   select {
     border: none;
   }
@@ -32,10 +29,6 @@ const ProjectsListHeader = () => (
 )
 
 const StyledProjectsList = styled.ul`
-  margin: 0;
-  padding: 0;
-  list-style: none;
-
   li {
     display: flex;
     height: 44px;
@@ -57,7 +50,6 @@ const StyledProjectsList = styled.ul`
         top: 0;
       }
       p {
-        margin: 0;
         font-size: 18px;
         font-weight: bold;
       }
